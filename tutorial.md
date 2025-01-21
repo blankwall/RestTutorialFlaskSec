@@ -63,8 +63,8 @@ def home(filename):
     return open(filename).read()
 ```
 
-    This route listens for any requests to /filename, where filename can be any file in the backend.
-    The file is read and returned as the response.
+This route listens for any requests to /filename, where filename can be any file in the backend.
+The file is read and returned as the response.
 
 ### 2.  Configuring the API Endpoint
 
@@ -152,6 +152,7 @@ taskForm.addEventListener('submit', async (event) => {
   taskInput.value = '';  // Clear the task input field
   loadTasks();  // Refresh the task list to include the new task
 });
+```
 
 - Step 1: The submit event listener captures the form submission.
 - Step 2: We extract the task name entered by the user, ensuring it's trimmed of any whitespace.
